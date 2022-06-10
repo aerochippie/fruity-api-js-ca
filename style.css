@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@100;400&display=swap');
+/**
+font-family: 'Amatic SC', cursive;
+font-family: 'Roboto', sans-serif;
+**/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #424244;
+    padding-top: 85px;
+    text-align: center;
+}
+
+h1 {
+
+font-size: 70px;
+color: whitesmoke;
+text-align: center;
+font-family: 'Amatic SC', cursive;
+
+}
+
+a{
+    text-decoration: none;;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+a:hover{
+    color: rgb(255, 144, 144);
+}
+
+input{
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button{
+    background-color: rgb(255, 144, 144);
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.form-error{
+    color: red;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 0.8rem;
+
+}
+
+
+
+.data{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.fruits{
+    background-color: #6d6dff;
+    padding: 10px;
+    margin:10px ;
+    border-radius: 15px;
+}
+
+.fruits:hover{
+    background-color: rgb(255, 144, 144);
+}
+
+.contactform{
+    text-align:center;
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.fruitname{
+    color: #6d6dff;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.return{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.container{
+    background-color: #fff;
+    margin: 0 auto;
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+
+
+}
+/********************** LOADER *********************************************/
+    .lds-circle {
+        display: inline-block;
+        transform: translateZ(1px);
+      }
+      .lds-circle > div {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        background: #fff;
+        animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      @keyframes lds-circle {
+        0%, 100% {
+          animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+        }
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(1800deg);
+          animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+        }
+        100% {
+          transform: rotateY(3600deg);
+        }
+      }
+      
